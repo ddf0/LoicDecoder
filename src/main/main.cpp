@@ -3,6 +3,8 @@
 #include <string>
 #include <fstream>
 #include <math.h>
+#include <stdint.h>
+#include <cstdlib>
 
 static const uint16_t crc16_tbl[256] = {
 	0x0000, 0x1021, 0x2042, 0x3063, 0x4084, 0x50a5, 0x60c6, 0x70e7,
@@ -96,6 +98,7 @@ int main(){
 	uint16_t crc16_stored;
     std::string finname = "", foutname = "";
     setlocale(LC_ALL, "RUS");
+	std::system("chcp 1251");
     std::cout << "Введите имя файла(без .loic):\n";
     while (finname == "")
     {
