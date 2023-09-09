@@ -1,0 +1,5 @@
+file(GLOB_RECURSE SRC_FILES "*.cpp")
+
+include_directories("./")
+
+add_library(loic_decoder STATIC ${SRC_FILES})

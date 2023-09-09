@@ -1,0 +1,6 @@
+add_executable(loic_decoder_test_001 001.cpp)
+target_link_libraries(loic_decoder_test_001 loic_decoder)
+
+enable_testing()
+
+add_test(NAME LOIC_DECODER_TEST_001 COMMAND $<TARGET_FILE:loic_decoder_test_001>)
